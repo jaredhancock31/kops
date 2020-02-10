@@ -134,6 +134,7 @@ func (b *Builder) Build(cluster *kops.Cluster, ig *kops.InstanceGroup) (*Data, e
 			Phase:          phase,
 		}
 
+		// TODO swap: here's the call to gather all the pkg metadata (kubectl/kubelet/etc)
 		if err := applyCmd.AddFileAssets(assetBuilder); err != nil {
 			return nil, fmt.Errorf("error adding assets: %v", err)
 		}
