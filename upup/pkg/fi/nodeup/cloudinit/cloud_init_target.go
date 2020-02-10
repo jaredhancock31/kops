@@ -42,6 +42,7 @@ const (
 	Once
 )
 
+// TODO cisco: this is the AWS path using a cloud-init file rather than typical bash script
 func NewCloudInitTarget(out io.Writer, tags sets.String) *CloudInitTarget {
 	t := &CloudInitTarget{
 		Config: &CloudConfig{},
