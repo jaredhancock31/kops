@@ -26,6 +26,7 @@ import (
 	"k8s.io/kops/pkg/apis/kops"
 )
 
+// TODO cisco: here's the bootstrap script that will be executed
 var NodeUpTemplate = `#!/bin/bash
 # Copyright 2016 The Kubernetes Authors All rights reserved.
 #

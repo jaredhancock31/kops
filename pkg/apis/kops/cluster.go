@@ -46,6 +46,7 @@ type ClusterList struct {
 	Items []Cluster `json:"items"`
 }
 
+// TODO cisco: add fields for k3s-specific metadata
 // ClusterSpec defines the configuration for a cluster
 type ClusterSpec struct {
 	// The Channel we are following

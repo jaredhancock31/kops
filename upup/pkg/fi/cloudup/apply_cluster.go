@@ -149,6 +149,7 @@ type ApplyClusterCmd struct {
 	TaskMap map[string]fi.Task
 }
 
+// TODO cisco here's the starting point for the core of kops logic
 func (c *ApplyClusterCmd) Run() error {
 	if c.InstanceGroups == nil {
 		list, err := c.Clientset.InstanceGroupsFor(c.Cluster).List(metav1.ListOptions{})
